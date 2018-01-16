@@ -1,0 +1,2 @@
+#!/bin/bash
+curl -s w.of.je | grep Summary: | sed -e 's/<[^>]*>//g' | head -n 1  > current_jersey_weather
