@@ -1,2 +1,3 @@
 #!/bin/bash
+#the reason this is seperate is because it takes awhile to log in if this has to run
 curl -s w.of.je | grep Summary: | sed -e 's/<[^>]*>//g' | head -n 1  > current_jersey_weather
